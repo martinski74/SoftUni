@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiIvanAdventures", "BaiIvanAdventures\BaiIvanAdventures.csproj", "{D6CE8BCF-798A-401D-820D-C3B291A8724D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniIsDrunk", "AniIsDrunk\AniIsDrunk.csproj", "{5D854492-A123-44A1-9145-F6F37C5C6D76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristmasTree", "ChristmasTree\ChristmasTree.csproj", "{1439A89C-090C-4595-BFD2-E7AFB797944D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneProcese", "PhoneProcese\PhoneProcese.csproj", "{FBEED9FC-7B8E-4AE1-98CE-8207C6B2D42E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6CE8BCF-798A-401D-820D-C3B291A8724D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6CE8BCF-798A-401D-820D-C3B291A8724D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6CE8BCF-798A-401D-820D-C3B291A8724D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6CE8BCF-798A-401D-820D-C3B291A8724D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D854492-A123-44A1-9145-F6F37C5C6D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D854492-A123-44A1-9145-F6F37C5C6D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D854492-A123-44A1-9145-F6F37C5C6D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D854492-A123-44A1-9145-F6F37C5C6D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1439A89C-090C-4595-BFD2-E7AFB797944D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1439A89C-090C-4595-BFD2-E7AFB797944D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1439A89C-090C-4595-BFD2-E7AFB797944D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1439A89C-090C-4595-BFD2-E7AFB797944D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBEED9FC-7B8E-4AE1-98CE-8207C6B2D42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEED9FC-7B8E-4AE1-98CE-8207C6B2D42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEED9FC-7B8E-4AE1-98CE-8207C6B2D42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEED9FC-7B8E-4AE1-98CE-8207C6B2D42E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
