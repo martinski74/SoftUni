@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 KVO STAA?
 NISHTO, TI?
 CHUK, MAINA.
 
+=======
+Kvo staa?
+Nishto, ti?
+Chuk, maina.
+>>>>>>> df17aa815b4b88f27a7f10ad520adae7f0781a6e

@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 
+=======
+Vowels: 13
+Consonants: 17
+Punctuation: 2
+>>>>>>> df17aa815b4b88f27a7f10ad520adae7f0781a6e
