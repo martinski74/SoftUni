@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monthly Calendar</title>
+    <style>
+        .prev-month, .next-month {
+            color: #CCC
+        }
+
+        .today {
+            font-weight: bold;
+            background: #DDD;
+        }
+
+        .title {
+            background: #AAAAFF;
+            margin: 10px 0;
+            padding: 5px
+        }
+
+        table {
+            border: 1px solid #CCC;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        #calendarCode {
+            width: 100%;
+        }
+    </style>
+    <script>
+        function calendar([day, month, year]) {
+            //print calendar table header
+            let html = '<table>\n';
+            html += '  <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>\n';
+
+            let inputDate = new Date(year, month - 1, day);
+            let calendarDate = new Date(inputDate);
+            calendarDate.setDate(1);
+            calendarDate = new Date(calendarDate.getFullYear(), calendarDate.getMonth(), (calendarDate.getDate() - calendarDate.getDay()));
+            for (let r = 0; r < 6; r++) {   // can't be more than 6 weeks
+                if ((calendarDate.getMonth() != inputDate.getMonth()) && calendarDate.getTime() > inputDate.getTime()) {
+                    continue;
+                }
+                else {
+                    html += (r == 0) ? '  <tr>' : '<tr>';
+                }
+                for (let c = 0; c < 7; c++) {
+                    if (calendarDate.getTime() === inputDate.getTime()) {
+                        html += '<td class="today">' + calendarDate.getDate() + '</td>';
+                    }
+                    else if ((calendarDate.valueOf() < inputDate.valueOf()) && calendarDate.getMonth() != inputDate.getMonth()) {
+                        html += '<td class="prev-month">' + calendarDate.getDate() + '</td>';
+                    }
+                    else if ((calendarDate.valueOf() > inputDate.valueOf()) && calendarDate.getMonth() != inputDate.getMonth()) {
+                        html += '<td class="next-month">' + calendarDate.getDate() + '</td>';
+                    }
+                    else {
+                        html += '<td>' + calendarDate.getDate() + '</td>';
+                    }
+                    calendarDate = new Date(calendarDate.getFullYear(), calendarDate.getMonth(), calendarDate.getDate()+1);
+                }
+                html += '</tr>\n';
+            }
+
+            html += '</table>';
+            return html;
+        }
+    </script>
+
+</head>
+<body>
+    Day: <input id="day" type="number" value="4"/>
+    Month: <input id="month" type="number" value="9"/>
+    Year: <input id="year" type="number" value="2016"/>
+    <input type="button" value="Show"
+       onclick="let calendarHTML =
+            calendar([document.getElementById('day').value,
+                document.getElementById('month').value,
+                document.getElementById('year').value]);
+            document.getElementById('calendar').innerHTML = calendarHTML;
+            document.getElementById('calendarCode').innerText = calendarHTML"/>
+    <div class="title">Calendar:</div>
+    <div id="calendar">Calendar will be shown here</div>
+    <div class="title">HTML:</div>
+    <textarea rows="12" id="calendarCode"></textarea>
+
+</body>
+</html>
