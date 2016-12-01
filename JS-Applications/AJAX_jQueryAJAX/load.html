@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load</title>
+</head>
+<body>
+    <button onclick="load()">Load</button>
+<div id="result"></div>
+<script>
+    function load() {
+        let req = new XMLHttpRequest();
+        req.onreadystatechange = function () {
+            if(this.readyState == 4 && this.status == 200){
+                document.getElementById("result").textContent = this.responseText;
+            }
+        };
+        req.open("GET","https://api.github.com/users/testnakov/repos",true);
+        req.send();
+    }
+</script>
+</body>
+</html>
