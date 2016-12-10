@@ -7,6 +7,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     height: 100%;
+    background-color: greenyellow;
 }
 
 .menu {
@@ -92,6 +93,7 @@ input{
     color: white;
     text-align: center;
     padding: 15px;
+    transition: .5s ease-in;
 }
 
 input[type=text]{
@@ -132,13 +134,13 @@ table{
 }
 
 table th {
-    background: #DDD;
+    background: #318bdd;
     padding: 10px;
 }
 
 table td {
     padding: 5px 10px;
-    background: #EEE;
+    background: #c3ee86;
 }
 
 .secondaryButton{
