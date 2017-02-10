@@ -240,17 +240,6 @@ EXEC usp_TransferMoney 1, 2, 10000
 
 --TODO
 
--- Problem 20. Trigger
-CREATE TRIGGER tr_OnBuy ON UserGameItems
-INSTEAD OF INSERT
-AS 
-BEGIN
-	IF (inserted.ItemId IN)
-
- SELECT gtfi.ItemId, UserGameId, g.GameTypeId FROM UserGameItems AS ugi 
-	LEFT JOIN Games AS g ON g.Id = ugi.UserGameId
-	LEFT JOIN GameTypeForbiddenItems as gtfi ON gtfi.GameTypeId = g.GameTypeId
-END
 
 -- Problem 21. Massive Shopping
 BEGIN TRAN
