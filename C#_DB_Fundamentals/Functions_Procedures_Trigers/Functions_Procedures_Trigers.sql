@@ -238,7 +238,43 @@ EXEC usp_TransferMoney 1, 2, 10000
 
 -- 17. Create Table Logs
 
---TODO
+CREATE TRIGGER T_Accounts_After_Update ON Accounts AFTER UPDATE
+AS 
+BEGIN
+	INSERT INTO Logs (AccountId,OldSum,NewSum)
+	SELECT i.Id,d.Balance,i.Balance FROM inserted AS i
+	JOIN deleted AS d ON d.Id = i.Id
+END
+
+--18.Create Table Emails
+
+CREATE TRIGGER tr_LogToEmail ON Logs AFTER INSERT
+AS
+BEGIN
+	INSERT INTO NotificationEmails
+		(Recipient, Subject, Body)
+	SELECT AccountId,
+		'Balance change for account: ' 
+		+ CONVERT(varchar(10), AccountId),
+		'On ' + CONVERT(varchar(30), GETDATE()) + ' your balance was changed from '
+		+ CONVERT(varchar(30), OldSum) + ' to ' 
+		+ CONVERT(varchar(30), NewSum) 
+	  FROM Logs
+END
+
+--19*Scalar Function: Cash in User Games Odd Rows
+CREATE FUNCTION ufn_CashInUsersGames(@gameName nvarchar(50))
+RETURNS @Output TABLE(SumCash money)
+AS
+BEGIN
+	INSERT INTO @Output
+	SELECT SUM(sc.Cash) as SumCash FROM 
+	(SELECT Cash,ROW_NUMBER() OVER(ORDER BY Cash DESC) AS RowNumber FROM UsersGames ug 
+	RIGHT JOIN Games g ON ug.GameId = g.Id 
+	WHERE g.Name = @gameName) sc
+	WHERE RowNumber % 2 <> 0
+	RETURN
+END
 
 
 -- Problem 21. Massive Shopping
