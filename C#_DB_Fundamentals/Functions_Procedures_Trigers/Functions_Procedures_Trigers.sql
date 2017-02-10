@@ -248,6 +248,7 @@ END
 
 --18.Create Table Emails
 
+
 CREATE TRIGGER tr_LogToEmail ON Logs AFTER INSERT
 AS
 BEGIN
@@ -276,8 +277,6 @@ BEGIN
 	RETURN
 END
 
--- Problem 20. Trigger
---TODO..
 -- Problem 21. Massive Shopping
 BEGIN TRAN
 DECLARE @totalItemSum MONEY = (SELECT SUM(Price) AS TotalPrice FROM Items AS i 
