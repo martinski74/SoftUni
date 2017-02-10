@@ -277,7 +277,7 @@ BEGIN
 END
 
 -- Problem 20. Trigger
---TODO...
+--TODO..
 -- Problem 21. Massive Shopping
 BEGIN TRAN
 DECLARE @totalItemSum MONEY = (SELECT SUM(Price) AS TotalPrice FROM Items AS i 
