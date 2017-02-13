@@ -468,17 +468,17 @@ SELECT con.ContinentName, SUM(cou.AreaInSqKm) AS CountriesArea, SUM(CAST(cou.Pop
 -- Problem 34.
 CREATE TABLE Monasteries
 (
-Id INT PRIMARY KEY IDENTITY,
-Name VARCHAR(50),
-CountryCode CHAR(2),
-IsDeleted TINYINT
-CONSTRAINT FK_Monasteries_CountryCode FOREIGN KEY (CountryCode) REFERENCES Countries(CountryCode)
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(50),
+    CountryCode CHAR(2),
+    CONSTRAINT FK_Monasteries_Countries FOREIGN KEY (CountryCode)
+    REFERENCES Countries(CountryCode)
 )
-
+ 
 INSERT INTO Monasteries(Name, CountryCode) VALUES
-('Rila Monastery St. Ivan of Rila', 'BG'), 
-('Bachkovo Monastery Virgin Mary', 'BG'),
-('Troyan Monastery Holy Mother''s Assumption', 'BG'),
+('Rila Monastery “St. Ivan of Rila”', 'BG'),
+('Bachkovo Monastery “Virgin Mary”', 'BG'),
+('Troyan Monastery “Holy Mother''s Assumption”', 'BG'),
 ('Kopan Monastery', 'NP'),
 ('Thrangu Tashi Yangtse Monastery', 'NP'),
 ('Shechen Tennyi Dargyeling Monastery', 'NP'),
@@ -494,22 +494,46 @@ INSERT INTO Monasteries(Name, CountryCode) VALUES
 ('Pa-Auk Forest Monastery', 'MM'),
 ('Taktsang Palphug Monastery', 'BT'),
 ('Sümela Monastery', 'TR')
+ 
+ /* ALTER TABLE Countries
+ADD IsDeleted TINYINT
+CONSTRAINT D_Value DEFAULT 0 */
 
 UPDATE Countries
-	SET IsDeleted = 0
-WHERE CountryCode IN (SELECT cou.CountryCode FROM Countries AS cou 
-					LEFT JOIN CountriesRivers AS cr ON cr.CountryCode = cou.CountryCode
-					LEFT JOIN Rivers AS r ON r.Id = cr.RiverId 
-					GROUP BY cou.CountryCode
-					HAVING (COUNT(r.Id)) <= 3)
+SET IsDeleted = 1
+    WHERE CountryCode IN (
+        SELECT c.CountryCode FROM Countries c
+         INNER JOIN CountriesRivers cr ON cr.CountryCode = c.CountryCode
+         INNER JOIN Rivers r ON r.Id = cr.RiverId
+         GROUP BY c.CountryCode
+         HAVING COUNT(r.Id) > 3 )
+ 
+SELECT m.Name , c.CountryName FROM Monasteries AS m
+    INNER JOIN Countries c ON c.CountryCode = m.CountryCode
+WHERE c.IsDeleted = 0
+ORDER BY m.Name
 
-SELECT m.Name, cou.CountryName FROM [dbo].[Monasteries] AS m 
-	LEFT JOIN Countries AS cou ON cou.CountryCode = m.CountryCode
-	WHERE m.IsDeleted = 0
-	ORDER BY m.Name
-
-ALTER TABLE Countries
-ADD IsDeleted TINYINT
-CONSTRAINT D_Value DEFAULT 0
 
 -- Problem 35.							
+UPDATE	Countries
+SET CountryName = 'Burma'
+WHERE CountryName = 'Myanmar'
+
+INSERT INTO Monasteries(Name,CountryCode) VALUES ('Hanga Abbey',
+(SELECT CountryCode FROM Countries 
+WHERE CountryName = 'Tanzania'))
+
+INSERT INTO Monasteries(Name,CountryCode) VALUES ('Myan-Tin-Daik',
+(SELECT CountryCode FROM Countries 
+WHERE CountryName = 'Maynmar'))
+
+SELECT cnt.ContinentName, cntr.CountryName, 
+COUNT(m.Id) AS MonasteriesCount
+FROM Countries cntr
+LEFT JOIN Continents cnt
+ON cnt.ContinentCode = cntr.ContinentCode
+LEFT JOIN Monasteries m
+ON cntr.CountryCode = m.CountryCode
+WHERE cntr.IsDeleted != 1 OR cntr.IsDeleted IS NULL
+GROUP BY cnt.ContinentName, cntr.CountryName
+ORDER BY MonasteriesCount DESC, cntr.CountryName
