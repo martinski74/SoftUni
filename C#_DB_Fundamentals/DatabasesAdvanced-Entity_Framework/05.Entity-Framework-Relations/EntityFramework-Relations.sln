@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentSystem", "StudentSystem\StudentSystem.csproj", "{5554B145-E74F-47F2-9B26-0A71066BADA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photographers", "Photographers\Photographers.csproj", "{9FA53DD0-48AE-4E00-BF2F-173CD3A23646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSysytem", "BankSysytem\BankSysytem.csproj", "{48D5D548-9BCC-4E34-BDCB-A7F0013608A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5554B145-E74F-47F2-9B26-0A71066BADA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5554B145-E74F-47F2-9B26-0A71066BADA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5554B145-E74F-47F2-9B26-0A71066BADA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5554B145-E74F-47F2-9B26-0A71066BADA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FA53DD0-48AE-4E00-BF2F-173CD3A23646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FA53DD0-48AE-4E00-BF2F-173CD3A23646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FA53DD0-48AE-4E00-BF2F-173CD3A23646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FA53DD0-48AE-4E00-BF2F-173CD3A23646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D5D548-9BCC-4E34-BDCB-A7F0013608A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D5D548-9BCC-4E34-BDCB-A7F0013608A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D5D548-9BCC-4E34-BDCB-A7F0013608A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D5D548-9BCC-4E34-BDCB-A7F0013608A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
