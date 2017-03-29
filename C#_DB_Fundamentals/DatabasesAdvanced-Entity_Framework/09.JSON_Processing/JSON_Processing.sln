@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsShop.Models", "ProductsShop.Models\ProductsShop.Models.csproj", "{64E6EE3B-6735-4742-BD3E-395EB574295B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsShop.Data", "ProductsShop.Data\ProductsShop.Data.csproj", "{7022B7CD-502B-410A-81BD-260AA732916D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsShop.Client", "ProductsShop.Client\ProductsShop.Client.csproj", "{6C3636CD-45F9-41BE-BF3B-B84D0D6CA71E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductShop", "ProductShop", "{875EF740-357A-4998-A077-6C97B3057F4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CarDealer", "CarDealer", "{ACDDD85A-EF6C-4BEC-A048-FB3A5C3D583B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDealer.Models", "CarDealer.Models\CarDealer.Models.csproj", "{0AED2296-D07E-473D-A410-26A9F8FD8E8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDealer.Client", "CarDealer.Client\CarDealer.Client.csproj", "{5DDED6B8-DAEC-48A4-AAA5-100B08B33B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDealer.Data", "CarDealer.Data\CarDealer.Data.csproj", "{24C95945-1113-4B02-B902-FDB727C8845D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64E6EE3B-6735-4742-BD3E-395EB574295B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E6EE3B-6735-4742-BD3E-395EB574295B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E6EE3B-6735-4742-BD3E-395EB574295B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E6EE3B-6735-4742-BD3E-395EB574295B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7022B7CD-502B-410A-81BD-260AA732916D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7022B7CD-502B-410A-81BD-260AA732916D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7022B7CD-502B-410A-81BD-260AA732916D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7022B7CD-502B-410A-81BD-260AA732916D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C3636CD-45F9-41BE-BF3B-B84D0D6CA71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C3636CD-45F9-41BE-BF3B-B84D0D6CA71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C3636CD-45F9-41BE-BF3B-B84D0D6CA71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C3636CD-45F9-41BE-BF3B-B84D0D6CA71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AED2296-D07E-473D-A410-26A9F8FD8E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AED2296-D07E-473D-A410-26A9F8FD8E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AED2296-D07E-473D-A410-26A9F8FD8E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AED2296-D07E-473D-A410-26A9F8FD8E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDED6B8-DAEC-48A4-AAA5-100B08B33B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDED6B8-DAEC-48A4-AAA5-100B08B33B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDED6B8-DAEC-48A4-AAA5-100B08B33B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDED6B8-DAEC-48A4-AAA5-100B08B33B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C95945-1113-4B02-B902-FDB727C8845D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C95945-1113-4B02-B902-FDB727C8845D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C95945-1113-4B02-B902-FDB727C8845D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C95945-1113-4B02-B902-FDB727C8845D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64E6EE3B-6735-4742-BD3E-395EB574295B} = {875EF740-357A-4998-A077-6C97B3057F4A}
+		{7022B7CD-502B-410A-81BD-260AA732916D} = {875EF740-357A-4998-A077-6C97B3057F4A}
+		{6C3636CD-45F9-41BE-BF3B-B84D0D6CA71E} = {875EF740-357A-4998-A077-6C97B3057F4A}
+		{0AED2296-D07E-473D-A410-26A9F8FD8E8B} = {ACDDD85A-EF6C-4BEC-A048-FB3A5C3D583B}
+		{5DDED6B8-DAEC-48A4-AAA5-100B08B33B15} = {ACDDD85A-EF6C-4BEC-A048-FB3A5C3D583B}
+		{24C95945-1113-4B02-B902-FDB727C8845D} = {ACDDD85A-EF6C-4BEC-A048-FB3A5C3D583B}
+	EndGlobalSection
+EndGlobal
