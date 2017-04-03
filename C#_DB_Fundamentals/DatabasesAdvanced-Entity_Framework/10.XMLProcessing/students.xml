@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<student>
+  <name>Ivan Ivanov</name>
+  <gender>Male</gender>
+  <birthDate>1999/12/23</birthDate>
+  <phoneNumber>0888123456</phoneNumber>
+  <emai>ivan.ivanoc@abv.bg</emai>
+  <university>Software University</university>
+  <speciality>C# Web Developer</speciality>
+  <facultyNumber>123654789</facultyNumber>
+  <exams>
+    <exam>
+      <name>Programming Basic</name>
+      <dateTaken>2017/01/01</dateTaken>
+      <grade>6.0</grade>
+    </exam>
+    <exam>
+      <name>Programming Fundamentals</name>
+      <dateTaken>2017/05/05</dateTaken>
+      <grade>5.60</grade>
+    </exam>
+    <exam>
+      <name>Java Basic</name>
+      <dateTaken>2016/07/07</dateTaken>
+      <grade>6.0</grade>
+    </exam>
+  </exams>
+</student>
