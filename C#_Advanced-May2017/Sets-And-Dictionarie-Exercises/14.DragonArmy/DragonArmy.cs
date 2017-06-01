@@ -25,17 +25,20 @@ namespace _14.DragonArmy
                 if (!int.TryParse(tokens[2], out damage))
                 {
                     damage = 45;
-                };
+                }
+                ;
 
                 if (!int.TryParse(tokens[3], out health))
                 {
                     health = 250;
-                };
+                }
+                ;
 
                 if (!int.TryParse(tokens[4], out armor))
                 {
                     armor = 10;
-                };
+                }
+                ;
 
                 if (dragonTypes.ContainsKey(type))
                 {
@@ -47,16 +50,19 @@ namespace _14.DragonArmy
                     }
                     else
                     {
-                        dragonTypes[type].Add(name, new int[] { damage, health, armor });
+                        dragonTypes[type].Add(name, new int[] {damage, health, armor});
                     }
                 }
                 else
                 {
                     var dragonNames = new SortedDictionary<string, int[]>();
-                    dragonNames.Add(name, new int[] { damage, health, armor });
+                    dragonNames.Add(name, new int[] {damage, health, armor});
                     dragonTypes.Add(type, dragonNames);
                 }
             }
+
+           
+
 
             foreach (var pair in dragonTypes)
             {
@@ -78,7 +84,8 @@ namespace _14.DragonArmy
                 avarageHealth /= dragons.Count;
                 avarageArmor /= dragons.Count;
 
-                Console.WriteLine(String.Format("{0}::({1:f2}/{2:f2}/{3:f2})", type, avarageDamage, avarageHealth, avarageArmor));
+                Console.WriteLine(String.Format("{0}::({1:f2}/{2:f2}/{3:f2})", type, avarageDamage, avarageHealth,
+                    avarageArmor));
 
                 foreach (var nestedPair in dragons)
                 {
@@ -88,5 +95,6 @@ namespace _14.DragonArmy
                     Console.WriteLine($"-{name} -> damage: {info[0]}, health: {info[1]}, armor: {info[2]}");
                 }
             }
+        }
     }
 }
