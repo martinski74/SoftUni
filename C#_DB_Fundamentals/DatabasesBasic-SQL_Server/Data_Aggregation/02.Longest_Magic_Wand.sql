@@ -1,0 +1,1 @@
+SELECT max(MagicWandSize) FROM WizzardDeposits;
