@@ -9,6 +9,11 @@ namespace _03.Shapes
     {
         public static void Main()
         {
+            Console.ReadLine();
+            
+
         }
+        
     }
+    
 }
