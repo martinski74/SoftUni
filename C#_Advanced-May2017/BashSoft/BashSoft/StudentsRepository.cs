@@ -8,24 +8,34 @@ namespace BashSoft
 {
     public class StudentsRepository
     {
-        public static bool isDataInitialized = false;
-        private static Dictionary<string, Dictionary<string, List<int>>> studentsByCourse;
+        public  bool isDataInitialized = false;
+        private  Dictionary<string, Dictionary<string, List<int>>> studentsByCourse;
 
-        public static void InitializeData()
+        public  void LoadData(string fileName)
         {
-            if (!isDataInitialized)
+            if (isDataInitialized)
             {
-                OutputWriter.WriteMessageOnNewLine("Reading data...");
-                studentsByCourse = new Dictionary<string, Dictionary<string, List<int>>>();
-                ReadData();
+                OutputWriter.DisplayExeption(ExceptionMessages.DataAlreadyInitialisedException);
+            return;
+               
             }
             else
             {
-                OutputWriter.WriteMessageOnNewLine(ExceptionMessages.DataAlreadyInitialisedException);
+                OutputWriter.WriteMessageOnNewLine("Reading data...");
             }
         }
 
-        private static void ReadData()
+        public void UnloadData()
+        {
+            if (!this.isDataInitialized)
+            {
+                OutputWriter.DisplayExeption(ExceptionMessages.DataNotInitializedExceptionMessage);
+            }
+            this.studentsByCourse = new Dictionary<string, Dictionary<string, List<int>>>();
+            this.isDataInitialized = false;
+        }
+
+        private void ReadData()
         {
             string input = Console.ReadLine();
 
@@ -59,7 +69,7 @@ namespace BashSoft
             OutputWriter.WriteMessageOnNewLine("Data read!");
         }
 
-        private static bool IsQueryForCoursePossible(string courseName)
+        private  bool IsQueryForCoursePossible(string courseName)
         {
             if (isDataInitialized)
             {
@@ -80,7 +90,7 @@ namespace BashSoft
             return false;
         }
 
-        private static bool IsQueryForStudentPossible(string courseName, string studentUserName)
+        private  bool IsQueryForStudentPossible(string courseName, string studentUserName)
         {
             if (IsQueryForCoursePossible(courseName) && studentsByCourse[courseName].ContainsKey(studentUserName))
             {
@@ -94,7 +104,7 @@ namespace BashSoft
             return false;
         }
 
-        public static void GetStudentScoresFromCourse(string courseName, string username)
+        public  void GetStudentScoresFromCourse(string courseName, string username)
         {
             if (IsQueryForStudentPossible(courseName, username))
             {
@@ -102,7 +112,7 @@ namespace BashSoft
             }
         }
 
-        public static void GetAllStudentsFromCourse(string courseName)
+        public  void GetAllStudentsFromCourse(string courseName)
         {
             if (IsQueryForCoursePossible(courseName))
             {
