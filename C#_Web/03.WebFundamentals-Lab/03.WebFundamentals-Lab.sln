@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.WelcomeToHTML", "01.WelcomeToHTML", "{5E81D5AD-C1B9-4301-AE11-FF28FAB529B6}"
+	ProjectSection(SolutionItems) = preProject
+		welcome.html = welcome.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Headings", "02.Headings", "{E71E6655-9B56-49D2-BD9B-E516F7A9A0FC}"
+	ProjectSection(SolutionItems) = preProject
+		Headings.html = Headings.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Paragraphs", "03.Paragraphs", "{91974DB2-D587-4642-89B0-E8F50188F3B8}"
+	ProjectSection(SolutionItems) = preProject
+		paragraphs.html = paragraphs.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.MyTODOList", "04.MyTODOList", "{292AF3BA-685C-477E-97FE-79C204F9A97F}"
+	ProjectSection(SolutionItems) = preProject
+		todo.html = todo.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.HelloHTML", "05.HelloHTML", "{E4EE4A05-5DA6-476C-B158-786C37B86DE9}"
+	ProjectSection(SolutionItems) = preProject
+		hello.html = hello.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.Website", "06.Website", "{BFBCDFD4-3DED-4FD3-86A7-95D96D2C5DD2}"
+	ProjectSection(SolutionItems) = preProject
+		hello.html = hello.html
+		home.html = home.html
+		todo.html = todo.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07.Fruits", "07.Fruits", "{0C26A830-3E43-42AD-9331-74196DD7EEA5}"
+	ProjectSection(SolutionItems) = preProject
+		fruits.html = fruits.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{8A394987-9DB6-47CC-B646-2A8E875C954A}"
+	ProjectSection(SolutionItems) = preProject
+		style.css = style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D79595E6-13B6-44CE-825C-77B9E2850BA0}"
+	ProjectSection(SolutionItems) = preProject
+		images\apple.png = images\apple.png
+		images\banana.png = images\banana.png
+		images\kiwi.png = images\kiwi.png
+		images\orange.png = images\orange.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08.Receipe", "08.Receipe", "{C7EC8878-8EC9-453B-BB58-8AC9E1F0B9A7}"
+	ProjectSection(SolutionItems) = preProject
+		receipt.html = receipt.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09.Contact", "09.Contact", "{8D51C693-C47D-481E-9BC4-6DC57735705B}"
+	ProjectSection(SolutionItems) = preProject
+		contact.html = contact.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.Colors", "10.Colors", "{5BB0CF64-F846-43C3-8D5F-8974767C2906}"
+	ProjectSection(SolutionItems) = preProject
+		colors.html = colors.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11.Borders", "11.Borders", "{B0544301-E405-481D-ABFE-F29D889BF864}"
+	ProjectSection(SolutionItems) = preProject
+		borders.html = borders.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12.Rectangles", "12.Rectangles", "{113D549A-9886-4BA7-B6F5-BF4991A0F2CB}"
+	ProjectSection(SolutionItems) = preProject
+		border-style.css = border-style.css
+		rectangles.html = rectangles.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13.Linguages", "13.Linguages", "{1888FB5F-5B3B-4B73-A938-BF3709EB7EAC}"
+	ProjectSection(SolutionItems) = preProject
+		langs.css = langs.css
+		languages.html = languages.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14.ContactUs", "14.ContactUs", "{C437A371-7598-48DB-8E8F-3BBDDFE69D52}"
+	ProjectSection(SolutionItems) = preProject
+		contact-form.html = contact-form.html
+		contact-us.css = contact-us.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A394987-9DB6-47CC-B646-2A8E875C954A} = {0C26A830-3E43-42AD-9331-74196DD7EEA5}
+		{D79595E6-13B6-44CE-825C-77B9E2850BA0} = {0C26A830-3E43-42AD-9331-74196DD7EEA5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90618D93-5B18-432B-A739-57393FC7336F}
+	EndGlobalSection
+EndGlobal

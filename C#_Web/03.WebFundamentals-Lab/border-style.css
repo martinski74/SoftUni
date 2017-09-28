@@ -1,0 +1,16 @@
+﻿.blue{
+    border:dotted 3px blue;
+    border-radius:10px;
+    padding:20px;
+}
+.red {
+    border: dotted 3px red;
+    border-radius: 10px;
+    padding: 20px;
+}
+.green {
+    border: solid 3px green;;
+    border-radius: 5px;
+    text-align:center;
+    padding:20px;
+}
