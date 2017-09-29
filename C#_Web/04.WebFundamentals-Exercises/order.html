@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SoftUni Beers</title>
+    <link rel="stylesheet" type="text/css" href="./form.css" />
+</head>
+<body>
+    <main>
+        <center>
+            <h1>Order a Beer</h1>
+            <br />
+            <form>
+                <label>Brand</label><br />
+                <select>
+                    <option selected disabled>Select a brand</option>
+                    <option>Corona Extra 330ml</option>
+                    <option>Stella Artois 500ml</option>
+                    <option>Carlsberg 330ml</option>
+                </select>
+                <label>Quantity</label><br />
+                <input type="number" min="1" max="15" placeholder="Enter amount of beers (1-15)"/><br />
+                <label>Destination</label><br />
+                <select>
+                    <option selected disabled>Selec a destination</option>
+                    <option>Sofia</option>
+                    <option>Varna</option>
+                    <option>Russe</option>
+                </select>
+                <label>Ener ypur birthdate</label><br />
+                <input placeholder="mm/dd/yyyy" type="date" /><br />
+                <label>Got an opinion,comment, recomandation?Share it with us!</label><br />
+               <textarea ></textarea>
+                <input type="submit" value="Order"/>
+               
+            </form>
+        </center>
+    </main>
+</body>
+</html>
