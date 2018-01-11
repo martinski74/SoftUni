@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Здравословен Блог</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/jquery-3.1.0.js")
+    <script>
+        $(document)
+            .ready(function() {
+            $(".alert-info").fadeOut(5000)
+            });
+    
+    </script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <img src="/Content/images/nature.png" width="55" height="60">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Здравословен Блог", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Начало", "Index", "Home")</li>
+                <li>@Html.ActionLink("Статии", "Index", "Posts")</li>
+                <li>@Html.ActionLink("Нова статия", "Create", "Posts")</li>
+            </ul>
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
+</div>
+<audio controls>
+    <source src="~/Content/music/Bird-music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container body-content">
+    @Html.Partial("_Notifications")
+    @RenderBody()
+    <hr/>
+    <footer>
+        <p>
+            &copy; @DateTime.Now.Year - Здравословен Блог
+            <a href="https:\\facebook.com"target="_blank"><img src="/Content/images/facebook-logo-png-9.png"/></a>
+            <a href="https://github.com/martinski74/SampleBlog" target="_blank"><img src="/Content/images/index.png"/></a>
+            <a href="https://twitter.com/" target="_blamk"><img src="/Content/images/twitter_3.png"/></a>
+        </p>
+
+
+    </footer>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+﻿@{ViewBag.Title = "Начална страница";}
+
+@using System.Web.UI.WebControls
+@model List<MyHealthyBlog.Models.Post>
+
+
+<section class="row">
+    
+    @foreach (var post in Model)
+    {
+        <article class="post col-md-6">
+            <h2 class="title">
+                <a href="/Posts/Details/@post.Id">@post.Title</a>
+            </h2>
+            <div class="about">
+                Публикувано
+                @if (post.Author != null)
+                {
+                    @:от <i>@post.Author.FullName (@post.Author.UserName) </i>;
+                }
+                на <i>@post.Date</i>
+            </div>
+            <div class="body">@Html.Raw(post.Body)</div>
+            <hr style="margin-top: 5px;" />
+            <label class="tog">
+                <input type="checkbox">
+                <span></span>  
+                <a href="/Posts/Comments">Добавете коментар<img src="/Content/images/hipchat-icon-100043057-medium.png"/></a>
+            </label><hr style="margin-top: 5px;" />
+            <div class="comment">@Html.Raw(post.Comments)</div>
+            
+        </article>
+        
+    }
+    <aside class="sidebar">
+        <h3>Последни публикации</h3>
+        @foreach (var post in Model)
+        {
+            <p><a href="/Posts/Details/@post.Id">@post.Title</a></p>
+        }
+    </aside>
+
+</section>
+
+   
+

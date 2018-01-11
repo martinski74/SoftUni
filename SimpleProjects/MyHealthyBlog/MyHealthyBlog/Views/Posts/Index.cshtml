@@ -1,0 +1,73 @@
+﻿@using MyHealthyBlog.Classes;
+@using Microsoft.AspNet.Identity;
+
+@model IEnumerable<MyHealthyBlog.Models.Post>
+
+@{
+    ViewBag.Title = "Статии";
+}
+
+<h2>Статии</h2>
+
+<p>
+    @Html.ActionLink("Нова публикация", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Заглавие
+        </th>
+        <th>
+            Съдържание
+        </th>
+        <th>
+            Дата
+        </th>
+        <th>
+            Автор
+        </th>
+        
+        <th>
+            Действия
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Utils.CutText(item.Body)
+            </td>
+            <td>
+                 @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @if (item.Author.FullName == null)
+                {
+                    <i>(няма автор)</i>
+                }
+
+                @Html.DisplayFor(modelItem => item.Author.FullName)
+
+            </td>
+           
+            <td>
+                @if (User.IsInRole("Administrators") ||(item.Author!= null && User.Identity.Name == item.Author.UserName))
+                {
+                    @Html.ActionLink("редакция", "Edit", new { id = item.Id }) @:|
+            }
+                @Html.ActionLink("детайли", "Details", new { id = item.Id })
+                @if (User.IsInRole("Administrators") || (item.Author != null && User.Identity.Name == item.Author.UserName))
+                {
+                    @:| @Html.ActionLink("изтрий", "Delete", new { id = item.Id })
+            }
+
+            </td>
+        </tr>
+    }
+
+</table>

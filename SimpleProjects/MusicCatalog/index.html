@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Song Catalog</title>
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/song-library.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="styles/song-library.css" />
+</head>
+<body onload="startApp()">
+<header id="menu">
+    <img src="styles/images/music-logo2.jpg" width="150" height="60"/>
+    <a href="#" id="linkHome">Home</a>
+    <a href="#" id="linkLogin">Login</a>
+    <a href="#" id="linkRegister">Register</a>
+    <a href="#" id="linkListSongs">List Songs</a>
+    <a href="#" id="linkCreateSong">Create Item</a>
+    <a href="#" id="linkLogout">Logout</a>
+    <span id="loggedInUser"></span>
+</header>
+
+<audio controls>
+    <source src="music/VhKj9O8Kd1.mp3" type="audio/mp3">
+</audio>
+
+<main>
+    <section id="loadingBox">Loading ...</section>
+
+    <section id="infoBox">Info</section>
+
+    <section id="errorBox">Error</section>
+
+    <section id="viewHome">
+        <h1> Welcome to our music catalog.</h1>
+
+    </section>
+    <section id="viewLogin">
+        <h1>Please login</h1>
+        <form id="formLogin">
+            <div><b>Username</b></div>
+            <div><input type="text" name=
+                    "username" required /></div>
+            <div><b>Password</b></div>
+            <div><input type="password"
+                        name="passwd" required /></div><br>
+            <div><input type="button"
+                        id="buttonLoginUser" value="Login" /></div>
+        </form>
+    </section>
+    <section id="viewRegister">
+        <h1>Please register here</h1>
+        <form id="formRegister">
+            <div><b>Username</b></div>
+            <div><input type="text" name=
+                    "username" required /></div>
+            <div><b>Password</b></div>
+            <div><input type="password"
+                        name="passwd" required /></div><br>
+						<div><b>Confirm Password</b></div>
+						<div><input type="password"
+                        name="confirm-passwd" required /></div><br>
+            <div><input type="button"
+                        id="buttonRegisterUser" value="Register" /></div>
+        </form>
+    </section>
+    <section id="viewSongs">
+        <h1>MUSIC CATALOG</h1>
+        <div id="songs">
+            <table>
+                <tr>
+                    <th>Titlt</th>
+                    <th>Artist</th>
+                    <th>Album</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Song title</td>
+                    <td>Song author</td>
+                    <td>Song album</td>
+                    <td>
+                        <a href="#">[ Delete ]</a>
+                        <a href="#">[ Edit ]</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="viewCreateSong">
+        <h1>Create new item</h1>
+        <form id="formCreateSong">
+            <div>Title:</div>
+            <div><input type="text" name="title" required /></div>
+            <div>Singer:</div>
+            <div><input type="text" name="author" required /></div>
+            <div>Album:</div>
+            <div><textarea name="descr"
+                           rows="10" required></textarea></div>
+            <div><input type="button"
+                        id="buttonCreateSong" value="Create" /></div>
+        </form>
+    </section>
+    <section id="viewEditSong">
+        <h1>Edit existing song</h1>
+        <form id="formEditSong">
+            <div><input type="hidden" name="id" required /></div>
+            <div>Title:</div>
+            <div><input type="text" name="title" required /></div>
+            <div>Artist:</div>
+            <div><input type="text" name="author" required /></div>
+            <div>Album:</div>
+            <div><textarea name="descr" rows="10"
+                           required></textarea></div>
+            <div><input type="button" id="buttonEditSong"
+                        value="Edit" /></div>
+        </form>
+    </section>
+
+</main>
+<footer><p>(C)2016 Music Catalog by Double Team!&reg;
+   <a href="https://www.facebook.com/" target="_blank"><img src="styles/images/facebook.jpg" width="20" height="20"></a>
+    <a href="https://twitter.com/"target="_blank"><img src="styles/images/Twitter-icon.png" width="20" height="20"></a>
+    <a href="https://github.com/" target="_blank"><img src="styles/images/index.png" width="20" height="20"></a>
+</p>
+</footer>
+</body>
+
+</html>
