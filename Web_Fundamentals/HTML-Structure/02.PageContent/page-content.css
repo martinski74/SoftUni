@@ -1,0 +1,16 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCCCCC;
+}
+h1{
+    font-size: 28px;
+}p{
+    font-size: 24px;
+ }
+ section{
+     margin-left: 20px;
+ }
+article > header > p{
+     font-style: italic;
+ }

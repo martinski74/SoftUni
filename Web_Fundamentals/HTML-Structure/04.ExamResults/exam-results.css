@@ -1,0 +1,7 @@
+table, td, tr, th {
+    border: 1px solid #000000;
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
