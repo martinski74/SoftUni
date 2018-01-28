@@ -1,0 +1,37 @@
+@font-face{
+    font-family: Lato, sens-serif;
+    src: url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
+}
+body{
+    font-family: Lato, sens-serif;
+}
+table{
+    color: #333333;
+    border: 1px solid black;
+    text-align: center;
+    border-spacing: unset;
+}
+thead{
+    color: #ffffff;
+    background-color: #90b4d6;
+    letter-spacing: 2px;
+    text-align: center;
+}
+th{
+    padding: 5px 30px 5px 10px;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    background-color: #90b4d6;
+}
+td{
+    padding: 5px 30px 5px 10px;
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+    background-color: #84b3ad;
+    width: 150px;
+}
+tr:nth-child(even) td{
+    background-color: #689ad8;
+}
