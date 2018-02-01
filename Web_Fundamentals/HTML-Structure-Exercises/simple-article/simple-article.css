@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Lato;
     src: url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
@@ -5,10 +6,11 @@
 body{
     font-family: Lato, sens-serif;
 }
-#wrapper{
+article{
     width: 550px;
     border-radius: 15px;
     padding: 25px;
+    text-align: center;
     background-color: #fafafa;
     box-shadow: 10px 11px 35px -14px rgba(0,0,0,0.54);
 }
@@ -27,4 +29,5 @@ img{
 }
 p{
     text-align: justify;
+	font-size:14px;
 }
