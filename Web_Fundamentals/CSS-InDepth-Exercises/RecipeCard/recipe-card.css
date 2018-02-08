@@ -1,0 +1,52 @@
+@import "https://fonts.google.com/selection?selection.family=Lato";
+
+body{
+    background: url("images/food-image-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+main h1{
+    font-size: 52px;
+    float: right;
+    text-transform: uppercase;
+    color: white;
+    padding-right: 150px;
+}
+.prep-steps{
+    float: right;
+    padding-right: 150px;
+    color: white;
+    width: 590px;
+}
+.step{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.recipies-info{
+    color: white;
+    padding-left: 165px;
+    padding-top: 20px;
+}
+.recipies-info p{
+    display: inline-block;
+    margin-left: 20px;
+}
+.recipies-info span{
+    color: #b5c640;
+}
+.btn-primary{
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 6px;
+    color: white;
+    width: 135px;
+    margin-left: 350px;
+}
+.btn-primary:hover{
+    background-color: #b5c640;
+    cursor: pointer;
+}

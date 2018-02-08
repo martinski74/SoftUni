@@ -1,0 +1,49 @@
+@import "https://fonts.google.com/selection?selection.family=Lato";
+
+body{
+    margin: 0;
+    font-family: Lato,sans-serif;
+    font-size: 14px;
+}
+header{
+    background: url("images/header.jpg");
+    background-size: cover;
+}
+header h1{
+    color: #FFFFFF;
+    text-align: center;
+    padding: 90px;
+    margin: 0;
+}
+.content{
+    float: left;
+    width: 40%;
+}
+.content article{
+    padding-left: 80px;
+    width:170%;
+}
+aside{
+    margin-left: 76%;
+    padding-left: 22px;
+    padding-top: 20px;
+}
+aside img{
+    width:90%;
+}
+.content article button{
+    border: 1px solid #ec5353;
+    background: white;
+    border-radius: 25px;
+    padding: 9px;
+    color: #ec5353;
+    width: 100px;
+}
+.content article button:hover{
+    color: white;;
+    background: #ec5353;
+    cursor: pointer;
+}
+
+
+

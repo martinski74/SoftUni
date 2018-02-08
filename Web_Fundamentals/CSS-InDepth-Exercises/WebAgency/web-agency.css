@@ -1,0 +1,70 @@
+@import "https://fonts.google.com/selection?selection.family=Lato";
+
+body{
+    background-color:#25457F ;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.nav-brand{
+    padding: 10px;
+}
+ul.nav-primary{
+    float: right;
+    padding-right: 25px;
+}
+.nav-item{
+    list-style: none;
+    display: inline-block;
+
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+li.nav-item::first-letter{
+    text-transform: uppercase;
+}
+.cta-btn{
+    background-color:#3EC5F7;
+    border-radius: 12px;
+    padding: 10px;
+}
+.header-title,.header-subtitle{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+    font-weight: initial;
+    letter-spacing: 4px;
+}
+#button-container{
+    text-align: center;
+    margin-top: 45px;
+}
+h2.header-subtitle{
+    color: #4A759B;
+}
+a.header-btn{
+    padding: 10px 19px 10px 20px;
+}
+#button-container::first-letter{
+    text-transform: capitalize;
+}
+ul.header-services{
+    list-style: none;
+    margin-top: 50px;
+}
+.service{
+    display: inline-block;
+    width: 33%;
+}
+.service:hover{
+    background-color: #3EC5F7;
+}
+.service-link{
+    text-decoration: none;
+
+    color: white;
+}

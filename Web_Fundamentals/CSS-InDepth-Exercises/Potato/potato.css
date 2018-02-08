@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    width: 100%;
+}
+header,nav{
+    background: #BBA48C;
+    background: radial-gradient(ellipse at center,
+    rgba(192,169,145,1) 0%,
+    rgba(192,169,145,1) 59%,
+    rgba(168,143,121,1) 100%);;
+}
+.brand{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+.nav-primary{
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: -30px;
+}
+li.nav-item{
+    display: inline-block;
+    margin-right: 30px;
+}
+li.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.button-cta{
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px;
+}
+.button-cta:hover{
+    background: #826B58;
+}
+header{
+    text-align: center;
+}
+.header-title, .header-subtitle{
+    color: white;
+
+}
+.header-title{
+    text-transform: capitalize;
+    font-weight: unset;
+    letter-spacing: 1px;
+    padding-top: 100px;
+}
+.header-subtitle{
+    font-weight: unset;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+.header-potato{
+    width: 270px;
+    height: 230px;
+    margin: 40px;
+}
+.features{
+    background: url("images/potato-background.png");
+}
+.features-title,.features-subtitle{
+    text-align: center;
+    color: #A0B5C2;
+}
+.features-title{
+    text-transform: capitalize;
+    font-weight: lighter;
+    padding-top: 80px;
+}
+.features-subtitle{
+    padding-top: 20px;
+    font-weight: unset;
+}
+img.feature-potatoes{
+    padding-left: 330px;
+}
+.potato-img{
+    width: 80px;
+    height: 60px;
+    margin-top: 20px;
+}
+.order-title{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: inherit;
+    color: #767676;
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+ul.potato-types{
+    text-align: center;
+    margin-top: 45px;
+}
+li.potato{
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid #767676;
+}
+ul.potato-features{
+    list-style: none;
+}
+.potato-title{
+    color: #939393;
+    font-weight: initial;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.potato-description, .potato-price{
+    color: #939393;
+}
+.potato-description{
+    padding-top: 19px;
+}
+.btn-order{
+    background: none;
+    color: #9ED432;
+    border: 1px solid #9ED432;
+    border-radius: 10px;
+    padding: 2px 15px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.btn-order:hover{
+    background-color:#9ED432;
+    color: white;
+}
+.potato-price{
+    padding-top: 10px;
+}
+footer{
+    background-color: #897463;
+    text-align: center;
+    color: white;padding: 10px;
+}
