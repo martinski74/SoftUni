@@ -1,0 +1,56 @@
+body{
+    background: rgb(41,41,41);
+}
+footer{
+    height: 150px;
+    margin: 0 auto;
+}
+h2{
+    text-transform: uppercase;
+}
+section{
+    float: left;
+    margin-left: 10px;
+    padding: 20px;
+    height: 150px;
+    color: #ffffff;
+}
+footer > section > div div{
+    width: 70px;
+    height: 58px;
+    background: url("images/social.jpg");
+    display: inline-block;
+}
+.twiter{
+    background-position: 772px 126px;
+}
+.linkedin{
+    background-position: 642px 126px;
+}
+.youtube{
+    background-position: 325px 126px;
+}
+.facebook, .twiter, .youtube, .linkedin{
+    cursor: pointer;
+}
+.facebook:hover{
+    background-position: 0 60px;
+}
+.linkedin:hover{
+    background-position: 642px 63px;
+}
+.youtube:hover{
+    background-position: 325px 63px;
+}
+.twiter:hover{
+    background-position: -66px 63px;
+}
+ul {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}

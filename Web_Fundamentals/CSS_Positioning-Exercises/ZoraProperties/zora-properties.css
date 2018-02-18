@@ -1,0 +1,211 @@
+body{
+    font-family: Arial,sans-serif;
+}
+.aside{
+    float: left;
+    width: 20%;
+}
+.aside h1{
+    text-align: center;
+    font-size: 2.2em;
+}
+.aside img{
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 45px;
+}
+.aside h3{
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #C2C7C6;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    margin-bottom: 20px;
+    margin-left: -60px;
+}
+ul li a{
+    text-decoration: none;
+    color: #C2C7C6;
+    text-transform: uppercase;
+}
+.aside li>span>img{
+    width: 12px;
+    padding-right: 10px;
+}
+
+
+.content{
+    background-color: #F4F5F7;
+    float: right;
+    width: 80%;
+}
+.content h1{
+    font-weight: inherit;
+    margin-left: 60px;
+    color: gray;
+}
+.content button{
+    float: right;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    padding: 9px;
+    text-transform: uppercase;
+    margin-right: 50px;
+    color: white;
+    margin-top: -40px;
+}
+.content h4{
+    text-transform: capitalize;
+    margin-left: 60px;
+    font-size: 15px;
+}
+.content >p{
+    text-transform: uppercase;
+    margin-left: 60px;
+    font-size: 14px;
+}
+.content img{
+    width: 258px;
+    display: inline;
+    float: left;
+    margin-left: 60px;
+    background-color: white;
+    padding: 45px 0;
+}
+.rented{
+    background-color: #B9C5CD;
+    border-radius: 15px;
+    padding: 5px 19px;
+    margin-left: -580px;
+    margin-top: 51px;
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+}
+.both{
+    position: absolute;
+    top: 349px;
+    right: 797px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #97989A;
+}
+.sec{
+    top: 367px;
+    left: 328px
+}
+.listed{
+    background-color: #67BC69;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    top: 215px;
+    position: absolute;
+    right: 550px;
+}
+.second{
+    top: 187px;
+    position: relative;
+    right: 240px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #97989A;
+}
+.olx{
+    top: 206px;
+    right: 383px;
+}
+.draft{
+    background-color: #97989A;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    top: 230px;
+    position: absolute;
+    right: 235px;
+}
+.tirth{
+    position: absolute;
+    top: 370px;
+    right: 167px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #97989A;
+}
+.tri{
+    top: 386px;
+    right: 255px;
+}
+.listed1{
+    background-color: #67BC69;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    top: 57px;
+    position: relative;
+    left: -586px;
+}
+.zaedno{
+    position: relative;
+    top: 190px;
+    left: -670px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #97989A;
+}
+.one{
+    top: 211px;
+    left: -812px;
+}
+.listed2{
+    background-color: #67BC69;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 18px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 535px;
+    right: 545px;
+}
+.last{
+    position: absolute;
+    bottom: -102px;
+    right: 480px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #97989A;
+}
+.for{
+    bottom: -122px;
+    right: 571px;
+}
+.draft-last{
+    background-color: #97989A;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 18px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 551px;
+    right: 232px;
+}
+.last-draft{
+    position: absolute;
+    top: 691px;
+    right: 164px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #97989A;
+}
+.two{
+    top: 711px;
+    right: 251px
+}

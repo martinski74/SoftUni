@@ -1,0 +1,25 @@
+body{
+    font-family: Arial,sans-serif;
+}
+h1{
+    margin-left: 110px;
+}
+h2{
+    margin-bottom: 0px;
+}
+h2,a{
+    color: #80B6BC;
+    font-weight: normal;
+}
+section{
+    margin: 0 auto;
+    width: 960px;
+}
+img{
+    width: 280px;
+    border: 1px solid gray;
+    padding: 10px;
+    float: left;
+    margin-right: 30px;
+    height: 190px;
+}

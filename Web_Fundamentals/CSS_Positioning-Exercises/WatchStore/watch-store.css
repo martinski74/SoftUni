@@ -1,0 +1,60 @@
+@import "https://fonts.googleapis.com/css?family=Lemon";
+
+body{
+    background-color: #602C74;
+    font-family: 'Lemon',sans-serif;
+}
+img{
+    width: 160px;
+    border: 3px solid #816974;
+    border-radius: 50%;
+}
+img:hover{
+    border-color: #FA4F00;
+    cursor: pointer;
+
+}
+h1{
+    text-transform: capitalize;
+    font-size: 2em;
+    padding-top: 15px;
+}
+section{
+    background-color: #FFAE31;
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 20px;
+    text-align: center;
+}
+article{
+    display: inline-block;
+    background-color: #5F2055;
+    margin: 0 30px 35px 30px;
+    width: 24%;
+    padding-top: 14px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+article p{
+    color: white;
+    line-height: 5px;
+
+}
+span{
+    color: white;
+    font-size: 20px;
+}
+.yelow{
+    color: #FFAE31;
+}
+button{
+    background-color: white;
+    border-radius: 15px;
+    padding: 4px 50px;
+    color: #9756F3;
+    font-family: Lemon;
+    margin-bottom: 10px;
+}
+button:hover{
+    color: black;
+}

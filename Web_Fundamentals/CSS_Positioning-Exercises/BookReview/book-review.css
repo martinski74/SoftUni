@@ -1,0 +1,172 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,800 ";
+
+body {
+    background: linear-gradient(to bottom, #567788 0%, #121f25 100%) no-repeat center center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background-color: #F5FBFD;
+    margin-top: 26px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    padding: 15px 0 15px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #B7B8C0;
+}
+
+.logo {
+    background-color: #F13E54;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    margin-left: 504px;
+    bottom: 83px;
+    z-index: -1;
+}
+
+.logo span {
+    position: relative;
+    top: 71px;
+    left: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6em;
+    letter-spacing: 3px;
+}
+
+main {
+    background-color: #D1D6DE;
+    margin: 0px 50px 50px 50px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    color: #71FFBC;
+    position: relative;
+    top: -106px;
+    font-size: 4.8em;
+    text-transform: uppercase;
+    z-index: 0;
+    left: 44px
+}
+
+.main {
+    text-transform: uppercase;
+    font-size: 2.3em;
+    z-index: 1;
+    position: relative;
+}
+
+article {
+    background-color: #F13655;
+    width: 45%;
+    text-align: center;
+    margin-left: 290px;
+    margin-top: -60px;
+    z-index: 5;
+    position: relative;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+article p {
+    color: white;
+}
+
+article p:first-of-type {
+    letter-spacing: 5px;
+    font-size: 1.5em;
+}
+
+article p:nth-child(3)::before {
+    content: '"';
+    color: #af213d;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+article p:nth-child(3)::after {
+    content: '"';
+    color: #af213d;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+article button {
+    background: none;
+    border: 3px solid #70ecff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding: 10px 25px;
+}
+section > h2{
+    color: #71FFBC;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 2em;
+}
+
+article button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+article button:hover {
+    background-color: #70ecff;
+    border-color:  #70ecff;
+    color: #348098;
+}
+section{
+    background-color: #FFFFFF;
+    width: 80%;
+    position: relative;
+    top: -200px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 250px 35px 35px 35px;
+}
+section > h2{
+    color: #71FFBC;
+    text-transform: capitalize;
+}
+.last{
+    letter-spacing: normal;
+    text-align: left;
+    width: 81%;
+}
+section > button{
+    background: none;
+    border: 2px solid #6F8F9E;
+    padding: 5px 15px;
+}
+section > button > a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+section > button:hover{
+    background-color: #648596;
+}
+section > button:hover a{
+    color: #70F8B8;
+}

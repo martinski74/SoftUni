@@ -1,0 +1,26 @@
+main{
+    width: 400px;
+    text-align: justify;
+}
+div{
+    background-color: #6698F3;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px white;
+
+}
+.left{
+    float: left;
+    margin-right: 10px;
+}
+.right{
+    float: right;
+    margin-left: 10px;
+}
+.center{
+    margin: 0 auto;
+}

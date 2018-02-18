@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+header, footer{
+    background-color: #90633B;
+    padding: 20px 0 20px 10px;
+    color: white;
+    border: 2px solid black;
+}
+.menu{
+    width: 25%;
+}
+.content{
+    width: 75%;
+}
+.float-left{
+    float: left;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    margin-top: 8px;
+}
+
+.float-right{
+    float: right;
+}
+article{
+    padding-left: 10px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}

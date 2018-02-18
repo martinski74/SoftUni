@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    text-align: center;
+    background: url("images/Layer-759_02.jpg");
+    padding: 20px 0;
+    height: 600px;
+}
+
+nav {
+    background-color: #BA925E;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    color: white;
+}
+
+header p {
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    width: 25%;
+    color: white;
+}
+
+#our-service {
+    display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#our-service::after {
+    content: ">";
+    color: #BA925E;
+}
+
+.first-section, .second-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.first-section article, .second-section article {
+    display: inline-block;
+    width: 25%;
+}
+
+i {
+    float: left;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+h3 {
+    margin-left: 50px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+article p {
+    margin-left: 50px;
+    text-align: left;
+}
+
+.baner {
+    background: url("images/steel-bg.jpg");
+    text-align: center;
+    opacity: 0.8;
+    height: 100px;
+}
+
+.baner p {
+    text-shadow: 2px 2px 3px darkgray;
+}
+
+.baner p:first-of-type {
+    color: #cb6e34;
+    font-size: 18px;
+    padding-top: 30px;
+}
+.benefits{
+    padding-bottom: 20px;
+}
+.benefits article:hover{
+    background-color: white;
+    color: black;
+}
+.wy-us {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background-choose-us.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+.wy-us h3{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+.wy-us article {
+    border: 1px solid orange;
+    color: white;
+    width: 22%;
+    display: inline-block;
+    margin: 0 15px;
+}
+.wy-us p{
+    overflow-wrap:break-word;
+    padding-right: 10px;
+}
+
+.wy-us article h5 {
+    text-align: center;
+}
+.amanda{
+    background: url("images/consulting-woman.jpg")center no-repeat;
+    height: 500px;
+
+}
+.amanda article{
+    background: gray;
+    width: 30%;
+    float: right;
+    margin: 20px 10px 5px 0;
+    height: 450px;
+    opacity: 0.8;
+}
+.amanda article div{
+    background: black;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    height: 200px;
+}
+.amanda article div p{
+    color: white;
+    margin-left: 5px;
+}
+.amanda article div p:first-of-type{
+    color: gray;
+    text-align: right;
+}
+.first-p:first-of-type::before{
+    content: open-quote;
+    color: brown;
+    font-size: 20px;
+}
+.first-p:first-of-type::after{
+    content: close-quote;
+    color: brown;
+    font-size: 20px;
+}
+.partners{
+    text-align: center;
+}
+footer{
+    background-color: black;
+}
+footer h2{
+    color: #ffffff;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.info li{
+    color: #ffffff;
+    width: 180px;
+    margin-top: -29px;
+    margin-left: 20px;
+    display: block;
+}
+.info li i{
+    font-size: 16px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    width: 153px;
+}
+.socials li{
+    width: 200px;
+}
+.socials a{
+    display: block;
+    width: 32px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    background: rgb(131,131,143);
+    color: #090821;
+}
+.extra-links ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 158px;
+    width: 200px;
+}
+.extra-links ul li{
+    display: block;
+    padding: 5px;
+}
+.extra-links ul li a{
+    color: #c79d63;
+    text-decoration: none;
+}
+.instagram-widget ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.instagram-widget img{
+    width: 100px;
+    height: 100px;
+}
+footer div{
+    display: inline-block;
+}

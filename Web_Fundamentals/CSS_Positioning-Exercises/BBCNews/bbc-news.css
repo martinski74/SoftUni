@@ -1,0 +1,25 @@
+.container{
+    font-family: Arial, sans-serif;
+    margin: 80px auto;
+    width: 900px;
+    border: 1px solid gray;
+}
+
+article{
+    display: inline-block;
+    width: 200px;
+    margin-left: 20px;
+    height: auto;
+
+    vertical-align: text-top;
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
