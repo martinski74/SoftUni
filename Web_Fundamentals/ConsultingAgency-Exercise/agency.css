@@ -202,10 +202,8 @@ footer h2{
 }
 .info li{
     color: #ffffff;
-    width: 180px;
-    margin-top: -29px;
-    margin-left: 20px;
     display: block;
+    margin-top: -30px;
 }
 .info li i{
     font-size: 16px;
@@ -217,6 +215,7 @@ footer h2{
 }
 .socials li{
     width: 200px;
+    margin: -10px;
 }
 .socials a{
     display: block;
@@ -228,12 +227,15 @@ footer h2{
     background: rgb(131,131,143);
     color: #090821;
 }
+.socials a i {
+    background-color: gray;
+}
 .extra-links ul{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     height: 158px;
-    width: 200px;
+    width: 260px;
 }
 .extra-links ul li{
     display: block;
@@ -243,11 +245,19 @@ footer h2{
     color: #c79d63;
     text-decoration: none;
 }
+.instagram-widget{
+    padding-bottom: 30px;
+    width: 350px;
+}
 .instagram-widget ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
     width: 300px;
+}
+.instagram-widget li{
+    display: inline-block;
+    float: left;
+    width: 40px;
+    margin-bottom: -44px;
 }
 .instagram-widget img{
     width: 100px;
@@ -255,4 +265,6 @@ footer h2{
 }
 footer div{
     display: inline-block;
+    border: 1px solid white;
+    margin: 10px 60px;
 }
