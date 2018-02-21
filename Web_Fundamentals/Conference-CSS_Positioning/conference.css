@@ -1,0 +1,221 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: Roboto,sans-serif;
+}
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/header-bg.png') no-repeat center;
+    color: white;
+}
+header nav > h1{
+    padding: 25px 0 0 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+header nav ul{
+    list-style: none;
+    margin-bottom: -4px;
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+}
+li.nav-item{
+    display: inline-block;
+    margin-right: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header h4{
+    text-transform: none;
+    font-weight: normal;
+    margin: 140px 370px;
+    width: 336px;
+    font-size: 20px;
+}
+header .fa-play-circle{
+    position: relative;
+    left: 760px;
+    top: -187px;
+}
+ul.icons{
+    list-style: none;
+    padding-left: 20px;
+}
+.icons li{
+    display: inline-block;
+    margin-right: 270px;
+}
+ul.description{
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.description li{
+    display: inline-block;
+    width: 22%;
+    margin-right: 26px;
+}
+.thinking-words ul{
+    list-style: none;
+}
+.thinking-words ul li{
+    display: inline-block;
+    width: 28%;
+    float: left;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+.words > p{
+    width: 168px;
+    margin-left: 180px;
+    font-weight: bold;
+    text-align: end;
+    padding-top: 30px;
+}
+.words > span{
+    text-transform: capitalize;
+    position: relative;
+    top: 85px;
+    left: 204px;
+}
+.border-bottom{
+    border-bottom: 1px solid gray;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+.thinking-words p:last-of-type{
+    font-weight: bold;
+}
+.img > img{
+    padding-left: 30px;
+}
+.orange{
+    background-color: orange;
+    width: 350px;
+    height: 428px;
+    position: relative;
+    left: 882px;
+    top: 10px;
+    opacity: 0.7;
+    bottom: 10px;
+}
+section .thinking-words{
+    border-bottom: 1px solid #000000;
+}
+.shedule{
+    background-color: #3C3E4A;
+}
+section.shedule{
+    color: white;
+}
+.shedule ul{
+    display: inline-block;
+    margin: 32px 120px;
+    list-style: none;
+}
+.shedule h5{
+    padding: 20px 0 0 60px;
+    font-size: 20px;
+    width: 390px;
+}
+.shedule li{
+    margin-top: 30px;
+}
+.shedule i{
+    background-color: orange;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+}
+.shedule span{
+    font-weight: bold;
+    margin-right: 0px;
+}
+.speakers img{
+    width: 250px;
+    background-color: white;
+    padding-bottom: 102px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.25);
+}
+.speakers h5{
+    width: 40%;
+    font-size: 18px;
+    padding-left: 45px;
+    padding-top: 30px;
+}
+.speakers > p{
+    width: 55%;
+    margin-right: 10px;
+    float: right;
+}
+.speakers div{
+    margin-top: 50px;
+    padding-left: 40px;
+}
+.events{
+    background-color: #3C3E4A;
+    color: white;
+    padding: 50px;
+}
+.border{
+    border: 1px solid white;
+    text-align: center;
+    width: 75%;
+    margin: 20px auto;
+}
+.border h1{
+    text-transform: uppercase;
+    margin: 40px;
+}
+.border p{
+    width: 59%;
+    margin-left: 179px;
+    margin-bottom: 50px;
+}
+input{
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+input[type=email]{
+    background: none;
+    border: none;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
+    color: white;
+    border-bottom: 3px solid orange;
+}
+input[type=submit]{
+    border: none;
+    color: white;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 70px;
+    padding-top: 50px;
+}
+footer p{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.right{
+    float: right;
+}
