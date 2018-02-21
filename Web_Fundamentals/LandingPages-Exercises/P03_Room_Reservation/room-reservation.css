@@ -1,0 +1,133 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+body {
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+h1 {
+    color: #279aea;
+    background-color: #f6f6f6;
+    border: 1px dotted grey;
+    padding: 40px;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+form > h2 {
+    padding-left: 84px;
+}
+
+form p {
+    width: 58%;
+    padding-left: 85px;
+    display: inline-block;
+}
+
+.search {
+    font-weight: bold;
+
+}
+
+.search, input[type=search] {
+    margin-left: 900px;
+    position: relative;
+    top: -58px;
+}
+
+input[type=search] {
+    width: 17%;
+    padding: 5px;
+    margin-top: 10px;
+
+    border-radius: 5px;
+}
+
+i {
+    position: relative;
+    top: -56px;
+    right: 22px;
+    font-size: 22px;
+}
+
+.fa-search {
+    font-size: 22px;
+}
+
+hr {
+    width: 87%;
+    border: 1px dotted;
+    margin-top: -35px;
+}
+
+form div {
+    display: inline-block;
+    width: 48%;
+    float: left;
+}
+
+.left input {
+    display: block;
+    margin-left: 79px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 200px;
+}
+
+.left h2 {
+    margin-left: 79px;
+}
+
+.right label {
+    display: inline-block;
+}
+
+.right select {
+    width: 340px;
+    margin-right: -90px;
+    padding: 5px;
+}
+
+.rooms {
+    position: relative;
+    top: -23px;
+    left: 107px;
+}
+
+input[type=number] {
+    padding: 5px;
+}
+
+input[type=date] {
+    margin-top: 30px;
+    padding: 5px;
+    width: 242px;
+    margin-left: -54px;
+}
+
+.date {
+    position: relative;
+    bottom: 21px;
+    left: 3px;
+}
+
+button {
+    position: relative;
+    top: 50px;
+    right: -368px;
+    width: 154px;
+    background-color: #32a6eb;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #40c39a;
+    cursor: pointer;
+}

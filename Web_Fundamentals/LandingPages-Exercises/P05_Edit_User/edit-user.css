@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+body{
+    font-family: Roboto, Helvetica,sans-serif ;
+    font-size: 14px;
+    color: #1E1917;
+    background-color: #f5f5f5;
+}
+.container{
+    width: 800px;
+    margin: 30px auto;
+}
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 45px 50px;
+    background-color: white;
+    border-top: 10px solid #324f5d;
+    border-right: 8px solid #324f5d;
+    color: #324f5d;
+    margin-bottom: 40px;
+}
+form{
+    padding-left: 30px;
+}
+label{
+    font-size: 14px;
+}
+.block{
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+    border-top: 3px solid #324f5d;
+    border-left: 3px solid #324f5d;
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.radio{
+    margin-bottom: 15px;
+}
+.radio input{
+    margin-right: 10px;
+}
+.radio label{
+    margin-right: 100px;
+}
+.group{
+    background-color: white;
+    border-top: 3px solid #324f5d;
+    border-left: 3px solid #324f5d;
+    padding: 10px;
+    margin-bottom: 35px;
+    width: 605px;
+}
+.group input{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+p{
+    margin-bottom: 20px;
+}
+a{
+    color: #226850;
+}
+button{
+    width: 200px;
+    background: none;
+    border: none;
+    margin-left: 110px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.orange{
+    color: #fe5c2f;
+    border-bottom: 3px solid #fe5c2f;
+    border-right: 3px solid #fe5c2f;
+    padding: 5px;
+}
+.green{
+    color: #03695b;
+    border-bottom: 3px solid #03695b;
+    border-right: 3px solid #03695b;
+    padding: 5px;
+}

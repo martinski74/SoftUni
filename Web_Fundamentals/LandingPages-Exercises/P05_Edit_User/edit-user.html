@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit User Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="edit-user.css">
+</head>
+<body>
+<div class="container">
+    <h1>Edit User</h1>
+    <form>
+        <label class="block">Username</label>
+        <input type="text">
+        <label class="block">Email</label>
+        <input type="email">
+        <label class="block">Phone number</label>
+        <input type="text">
+        <label class="block">User type</label>
+        <div class="radio">
+            <input type="radio" id="broadband">
+            <label for="broadband">Broadband</label>
+            <input type="radio" id="radio">
+            <label for="radio">Radio</label>
+        </div>
+        <label class="block">Change Password</label>
+        <input type="password">
+        <label class="block">Group</label>
+        <div class="group">
+            <input type="checkbox">All Group 1<br>
+            <input type="checkbox">Group 2<br>
+            <input type="checkbox">Group 3<br>
+            <input type="checkbox">Group 4<br>
+        </div>
+        <p>Contacts</p>
+        <p><a href="#">See Contacts list</a></p>
+        <button class="orange">Cancel</button>
+        <button class="green">Save</button>
+    </form>
+</div>
+</body>
+</html>

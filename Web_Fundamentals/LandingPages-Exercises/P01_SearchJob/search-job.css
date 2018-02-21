@@ -1,0 +1,82 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+body {
+    font-size: 14px;
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #394652;
+}
+nav ul{
+    margin: 0;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #8BAEC2;
+}
+
+nav a:before {
+    font-family: FontAwesome, serif;
+}
+
+li:first-child a::before {
+    content: "\f002";
+    padding-right: 5px;
+}
+
+li:nth-child(2) a::before {
+    content: "\f02c";
+    padding-right: 5px;
+}
+
+li:nth-child(3) a::before {
+    content: "\f041";
+    padding-right: 5px;
+}
+
+li:nth-child(4) a::before {
+    content: '\f007';
+    padding-right: 5px;
+}
+form{
+    background-color: #f5f5f5;
+    width: 100%;
+}
+label{
+    display: inline-block;
+    width: 20%;margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+span{
+    color: #384452;
+    padding: 25px;
+    font-weight: bold;
+}
+input{
+    padding: 10px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+button{
+    text-transform: uppercase;
+    background-color: #394652;
+    color: white;
+    padding: 10px 25px;
+    position: relative;
+    bottom: 45px;
+}
+button:hover,ul li:hover{
+    background-color: #3ac19a;
+    cursor: pointer;
+}
+ul li:hover a{
+    color: white;
+}
