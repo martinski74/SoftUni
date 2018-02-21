@@ -1,0 +1,6 @@
+input, select, textarea{
+    display: block;
+}
+form{
+    width: 300px;
+}

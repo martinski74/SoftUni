@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    background-color: #96735A;
+    font-family: Oxygen,sans-serif;
+}
+header{
+    text-align: center;
+}
+header img{
+    width: 100px;
+    border: 3px solid #d5c395;
+    margin-top: 50px;
+}
+.triangle{
+    position: relative;
+    left: 592px;
+    top: 56px;
+}
+main{
+    width: 40%;
+    background-color:#d5c395;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.name img,.pass img{
+    position: relative;
+    left: 29px;
+    top: 6px;
+}
+input[type="text"],input[type="password"]{
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+input{
+    width: 70%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+h2,input[type="submit"]{
+    margin-left: 24px;
+}
+h2{
+    color: white;
+    margin-left: -52px;
+    padding-top: 50px;
+}
+input[type="submit"]{
+    background-color: #96735A;
+    color: #d5c395;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    width: 386px;
+    margin-bottom: 50px;
+}
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+i{
+    position: relative;
+    left: 20px;
+}

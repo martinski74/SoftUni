@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact-form.css">
+</head>
+<body>
+<form action="" method="get">
+    <h2>Contact Form</h2>
+    <p>Please fill all the text in the fields.</p>
+    <hr />
+    <p class="name">
+        <label for="name">Your Name:</label>
+        <input type="text" required="required" id="name" placeholder="Your Full Name">
+    </p>
+    <p class="email">
+        Your Email:
+        <input type="email" required="required" id="email" placeholder="Your Email Address">
+    </p>
+    <p class="formfield">
+        <label for="textarea">Message:</label>
+        <textarea id="textarea" rows="8" placeholder="Your message to us"></textarea>
+    </p>
+    <p class="select">
+        <label>Subject:</label>
+        <select>
+            <option value="job inquiry">Job Inquiry</option>
+        </select>
+    </p>
+    <input type="submit" value="Send">
+</form>
+</body>
+</html>
