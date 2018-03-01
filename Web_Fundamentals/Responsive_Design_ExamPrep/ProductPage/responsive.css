@@ -1,0 +1,46 @@
+@media all and (max-width: 640px) {
+    body{
+        width: 100%;
+    }
+    .wrap {
+        width: 100%;
+    }
+    #header-bottom-area{
+        width: 103%;
+    }
+    #header-top-area h1{
+        width: 126px;
+    }
+    #header-top-area h2{
+        display: none;
+    }
+    #header-middle-area{
+        margin-top: 30px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        padding: 5px 15px;
+    }
+    #header-bottom-area{
+        display: none;
+    }
+    #product-menu{
+        display: block;
+        float: none;
+        border-bottom: 1px solid #808080;
+    }
+    #product-menu:hover .submenu{
+        display:block;
+        width:100%;
+    }
+    main{
+        text-align: center;
+    }
+    footer .share{
+        text-align: center;
+        float: none;
+    }
+    footer .box{
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,39 @@
+@media all and (min-width: 731px)and (max-width: 1200px){
+    #wrapper{
+        width: 100%;
+    }
+    header,main{
+        width: 95%;
+    }
+    header nav > ul li{
+        width: 20%;
+    }
+    main section{
+        width: 100%;
+    }
+    main aside{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+
+}
+@media all and (min-width: 500px) and (max-width:730px) {
+    header nav{
+        width: 100%;
+    }
+    header nav > ul li{
+        display: block;
+        width: 100%;
+    }
+    main section{
+        width: 98%;
+    }
+   main section div{
+       display: block;
+   }
+    main aside{
+        width: 98%;
+    }
+}
