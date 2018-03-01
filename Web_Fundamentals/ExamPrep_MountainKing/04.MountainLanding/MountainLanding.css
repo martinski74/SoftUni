@@ -1,0 +1,172 @@
+@import "https://fonts.googleapis.com/css?family=Lato";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    font-family: Lato, Montserrat, sans-serif;
+}
+
+header {
+    background: url("images/header.jpg") repeat no-repeat;
+    color: white;
+    height: 570px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+}
+
+nav ul {
+    margin-right: 90px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.logo {
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 45px;
+}
+
+header p {
+    text-align: center;
+    width: 390px;
+    margin: 0 auto;
+}
+
+header button {
+    margin-left: 590px;
+    margin-top: 60px;
+    background-color: #cabc9a;
+    padding: 5px 15px;
+    border: none;
+}
+header button:hover{
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about-us{
+    text-align: center;
+    padding: 0 138px;
+}
+.about-us h1{
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.about-us p:first-of-type{
+    font-style: italic;
+    margin-bottom: 70px;
+}
+.about-us p:last-of-type{
+    margin-bottom: 90px;
+}
+.mid-content{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10px;
+}
+.mid-content img{
+    width: 80px;
+}
+.mid-content article{
+    text-align: center;
+}
+.mid-content article p{
+    width: 79%;
+    margin-left: 50px;
+}
+.our-team img{
+    width: 80%;
+    box-shadow: 7px 6px 11px 4px #888888;
+}
+
+.our-team > p{
+    font-style: italic;
+    margin-top: -11px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.our-team h2{
+    text-transform: uppercase;
+    background-color: #f6f6f6;
+    display: inline-block;
+    margin-left: 469px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.pics{
+    display: flex;
+}
+.pics article{
+    width: 20%;
+    margin-left: 50px;
+    text-align: center;
+}
+.pics article h4{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.pics article p{
+    color: #a2a9ba;
+}
+.pcs-blog{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.blog img{
+    width: 260px;
+    float: left;
+}
+.blog{
+    background-color: #f6f6f6;
+}
+.blog h2,p{
+    text-align: center;
+}
+.blog h2{
+    text-transform: uppercase;
+    font-weight: inherit;
+    padding-top: 60px;
+}
+.blog > p{
+    font-style: italic;
+    margin-top: -15px;
+    margin-bottom: 50px;
+}
+.blog article{
+    width: 42%;
+    background-color: white;
+    box-shadow: 7px 6px 15px 0px #888888;
+
+}
+.blog article h3{
+    text-align: -moz-center;
+    text-transform: uppercase;
+    font-weight: inherit;
+}
+.blog article p{
+    display: inline-block;
+    text-align: inherit;
+    padding: 0 24px;
+    width: 170px;
+    color: #a2a9ba;
+    line-height: 25px;
+}

@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+
+body{
+    font-family: 'Francois One','Source Sans Pro',sans-serif;
+    background-color: #f4fcff;
+}
+form{
+    width: 400px;
+    margin: 0 auto;
+}
+h1{
+    border-bottom: 3px solid #17cf6c;
+    width: 290px;
+    font-size: 41px;
+}
+label{
+    display: block;
+    color: #acb4b4;
+}
+input{
+    padding: 9px;
+    padding-left: 35px;
+    width: 62%;
+    margin-bottom: 20px;
+    border: 1px solid #bedbe6;
+    border-radius: 3px;
+}
+.fa-envelope,.fa-lock,.fa-mobile,.fa-user-o{
+
+    position: absolute;
+    left: 446px;
+    margin-top: 10px;
+    border-right: 1px solid gray;
+    padding-right: 6px;
+}
+.fa-star{
+    color: red;
+    font-size: 6px;
+    position: absolute;
+    left: 430px;
+}
+button{
+    background-color: #31d47d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-left: 220px;
+}

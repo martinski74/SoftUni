@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body{
+    font-family: 'Lato','Montserrat',sans-serif;
+    margin: 40px auto;
+    border: 1px solid gray;
+    width: 90%;
+}
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+section{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+article{
+    display: inline-block;
+    width: 28%;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+article h3{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+ul{
+    padding-left: 0px;
+}
+ul li{
+    display: inline-block;
+    color: #bfbebf;
+    margin-right: 10px;
+}
+img{
+    width: 300px;
+}
+.blue{
+    color: blue;
+    font-weight: bold;
+}
+i{
+    color: #bfbebf;
+}
+.fa-circle{
+    font-size: 8px;
+    margin-right: 5px;
+}

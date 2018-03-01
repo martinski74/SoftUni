@@ -1,0 +1,61 @@
+@media all and (max-width: 479px) {
+    .menu span {
+        margin-left: 5px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu {
+        padding-top: 40px;
+    }
+
+    .about-us {
+        padding: 30px;
+    }
+
+    .about-us p {
+        width: 100%;
+    }
+
+    .headings {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 22px;
+    }
+
+    .paragraph {
+        width: 90%;
+    }
+    .views{
+        display: block;
+    }
+    .views img{
+        display: block;
+        width: 90%;
+        margin: 10px 20px;
+    }
+    hr{
+        width: 30%
+    }
+    #second-heading{
+        width: 100%;
+        margin-top: 320px;
+        font-size: 20px;
+    }
+    .why-us{
+        display: block;
+    }
+    .why-us article{
+        display: block;
+        width: 100%;
+    }
+    .final-section >.headings{
+      width: 97%;
+    }
+    .our-team{
+        display: block;
+        text-align: center;
+    }
+}
