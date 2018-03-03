@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cargo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="cargo-service.css">
+</head>
+<body>
+    <main>
+        <h2>Basic calculated fields sample.</h2>
+        <hr>
+        <form action="">
+            <label>
+                <p>Distance (mi) *</p>
+                <input class="distance" type="text" placeholder="Enter Diastance">
+            </label>
+            <div class="wait-fragile">
+                <label for="">
+                    <p>Weight (lb)</p>
+                    <input type="text" placeholder="Enter Weight">
+                </label>
+                <label for="">
+                    <p>Fragile (lb)</p>
+                    <select>
+                        <option selected>No</option>
+                        <option>Yes</option>
+                    </select>
+                </label>
+            </div>
+            <div class="properties">
+                <label for="">
+                    <p>Length (in)</p>
+                    <input type="text" placeholder="Length">
+                </label>
+                <label for="">
+                    <p>Heiht (in)</p>
+                    <input type="text" placeholder="height">
+                </label>
+                <label for="">
+                    <p>Width (in)</p>
+                    <input type="text" placeholder="10">
+                </label>
+            </div>
+            <div class="services">
+                <span>Extra services:</span>
+                <label class="radio">
+                    <i class="fa fa-circle"></i></i><input type="radio" id="r1" name="rr">Insurance
+                </label>
+                <label class="radio">
+                    <i class="fa fa-circle-thin"></i><input type="radio" id="r2" name="rr">Express Delivery
+                </label>
+            </div>
+            <hr>
+            <div class="total">
+                <span>total:</span>
+                <span class="orange">$ 00.00</span>
+            </div>
+            <hr>
+        </form>
+    </main>
+</body>
+</html>

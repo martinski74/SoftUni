@@ -1,0 +1,98 @@
+@import "https://fonts.googleapis.com/css?family=Titillium+Web";
+@import "https://fonts.googleapis.com/css?family=Lato";
+
+body {
+    font-family: 'Lato', 'Titillium Web', sans-serif;
+}
+
+main h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: -270px;
+}
+hr:nth-child(2){
+    width: 55%;
+}
+hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form {
+    width: 55%;
+    margin: 65px auto;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.distance {
+    padding: 10px 8px;
+    width: 97%;
+    border: 1px solid lightgray;
+}
+.distance:hover{
+    border: 2px solid orange;
+   border-color: orange;
+}
+
+.wait-fragile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.wait-fragile input[type="text"]{
+    width: 290px;
+    padding: 10px;
+}
+select{
+    margin-right: -65px;
+    width: 321px;
+    padding: 10px;
+}
+.wait-fragile:after {
+    content: '\f078';
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #ffbd1c;
+    right: 4px;
+    top: 64px;
+    height: 34px;
+    pointer-events: none;
+    position: relative;
+}
+.properties{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.properties label{
+
+}
+.properties input{
+    padding: 10px;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.radio{
+    margin-right:3px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+.orange{
+    color: orange;
+    margin-left: 566px;
+}
+.total > span{
+    text-transform: uppercase;
+}
+i{
+    padding-right: 5px;
+    color: orange;
+}
