@@ -1,0 +1,55 @@
+body{
+    background-image: url('images/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
+}
+h1{
+    margin-top: 306px;
+}
+span{
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

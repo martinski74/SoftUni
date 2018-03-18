@@ -1,0 +1,49 @@
+body p {
+  text-align: center; }
+body div {
+  background-color: brown;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 6%; }
+  body div div {
+    background-color: blue;
+    width: 400px;
+    height: 400px; }
+    body div div div {
+      background-color: greenyellow;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      text-align: center;
+      color: white;
+      margin: auto;
+      margin-top: 6%; }
+      body div div div div {
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        margin: auto;
+        margin-top: 6%;
+        margin-top: 10%; }
+        body div div div div div {
+          background-color: red;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          text-align: center;
+          color: white;
+          margin: auto;
+          margin-top: 6%;
+          margin-top: 14%; }
+          body div div div div div span {
+            position: relative;
+            top: 40px; }
+
+/*# sourceMappingURL=styles.css.map */

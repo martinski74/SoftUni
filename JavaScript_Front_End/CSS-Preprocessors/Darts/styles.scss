@@ -1,0 +1,51 @@
+@mixin div-styles {
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 6%;
+
+}
+
+body {
+  p {
+    text-align: center;
+  }
+  div {
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+    @include div-styles;
+
+    div {
+      background-color: blue;
+      width: 400px;
+      height: 400px;
+
+      div {
+        background-color: greenyellow;
+        width: 300px;
+        height: 300px;
+        @include div-styles;
+        div {
+          background-color: yellow;
+          width: 200px;
+          height: 200px;
+          @include div-styles;
+          margin-top: 10%;
+          div {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            @include div-styles;
+            margin-top: 14%;
+            span {
+              position: relative;
+              top: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
