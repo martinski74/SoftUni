@@ -17,7 +17,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03.SimpleSlide/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="472">
               <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -133,11 +133,12 @@
       <workItem from="1522650200191" duration="1717000" />
       <workItem from="1522653522623" duration="3000" />
       <workItem from="1522670688426" duration="607000" />
+      <workItem from="1522738713075" duration="118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7993000" />
+    <option name="totallyTimeSpent" value="8111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="204" y="102" width="991" height="666" extended-state="0" />
@@ -192,6 +193,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/03.SimpleSlide/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/02.NestsedAccordeon/styles.scss" />
     <entry file="file://$PROJECT_DIR$/02.NestsedAccordeon/styles.less">
       <provider selected="true" editor-type-id="text-editor">
@@ -222,7 +235,7 @@
     <entry file="file://$PROJECT_DIR$/03.SimpleSlide/индеь.html" />
     <entry file="file://$PROJECT_DIR$/03.SimpleSlide/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="472">
           <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
